@@ -6,8 +6,10 @@
 """
 import execjs
 
-with open('../demo5.js', encoding='utf-8') as fp:
+with open('./demo1.js',encoding='utf-8') as fp:
     js_content = fp.read()
 
+# print(js_content)
+#
 jj = execjs.compile(js_content)
 print(jj.call('x1'))
